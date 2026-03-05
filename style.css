@@ -116,6 +116,10 @@ nav {
   opacity: 1;
 }
 
+.nav-links a.active {
+  color: var(--accent);
+}
+
 .theme-toggle {
   background: none;
   border: 1px solid var(--border);
@@ -152,6 +156,17 @@ main {
   padding: 80px 0 0;
 }
 
+.page-section {
+  padding: 100px 0 0;
+}
+
+.page-section h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 8px;
+}
+
 .section h2 {
   font-size: 1.5rem;
   font-weight: 700;
@@ -174,6 +189,20 @@ main {
    ============================================ */
 .hero {
   padding: 140px 0 60px;
+}
+
+.hero-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border);
+  margin-bottom: 24px;
+  transition: border-color var(--transition);
+}
+
+.hero-avatar:hover {
+  border-color: var(--accent);
 }
 
 .hero-greeting {
