@@ -72,6 +72,22 @@
     <p>Ahmad Abugosh</p>
   </footer>
 
+  <div class="audio-player" id="audioPlayer">
+    <audio id="bgAudio" src="/audio/background.mp3" loop preload="none"></audio>
+    <button class="audio-toggle" id="audioToggle" aria-label="Play background music" aria-pressed="false">
+      <svg class="icon-play" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+      <svg class="icon-pause" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>
+    </button>
+    <span class="audio-label">Background music</span>
+    <div class="audio-volume">
+      <button class="audio-mute" id="audioMute" aria-label="Mute background music">
+        <svg class="icon-volume" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M18.36 5.64a9 9 0 0 1 0 12.72"/></svg>
+        <svg class="icon-muted" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+      </button>
+      <input type="range" class="audio-range" id="audioVolume" min="0" max="1" step="0.01" value="0.4" aria-label="Volume">
+    </div>
+  </div>
+
   <script src="../script.js"></script>
 </body>
 </html>
