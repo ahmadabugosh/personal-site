@@ -431,8 +431,7 @@ body {
 .audio-player {
   position: fixed;
   bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 20px;
   z-index: 90;
   display: flex;
   align-items: center;
@@ -561,11 +560,12 @@ body {
 }
 
 @media (max-width: 480px) {
-  .audio-label {
-    display: none;
+  .audio-player {
+    bottom: 16px;
+    right: 16px;
   }
 
   .audio-range {
-    width: 64px;
+    width: 56px;
   }
 }

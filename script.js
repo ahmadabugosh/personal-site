@@ -108,7 +108,7 @@ if (audio && player) {
   const reflectState = (isPlaying) => {
     player.classList.toggle('is-playing', isPlaying);
     playToggle.setAttribute('aria-pressed', String(isPlaying));
-    playToggle.setAttribute('aria-label', isPlaying ? 'Pause background music' : 'Play background music');
+    playToggle.setAttribute('aria-label', isPlaying ? 'Pause The Shire' : 'Play The Shire');
   };
 
   audio.addEventListener('play', () => {
