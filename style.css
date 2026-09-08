@@ -402,8 +402,29 @@ footer p {
    Responsive
    ============================================ */
 @media (max-width: 480px) {
+  /* Logo (138px) + links (203px) + padding overflowed a 390px viewport, so the
+     name ran into "About". Trim both sides and keep a guaranteed gap between
+     them; below ~360px the logo ellipsizes rather than colliding. */
+  nav {
+    padding: 0 16px;
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: 1rem;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
   .nav-links {
-    gap: 16px;
+    flex-shrink: 0;
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 0.8125rem;
   }
 
   .about-details {

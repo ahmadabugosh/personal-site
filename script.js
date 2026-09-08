@@ -45,7 +45,7 @@ if (audio && player) {
     try {
       localStorage.setItem(key, value);
     } catch {
-      /* storage unavailable (private mode) — playback still works */
+      /* storage unavailable (private mode) - playback still works */
     }
   };
 
